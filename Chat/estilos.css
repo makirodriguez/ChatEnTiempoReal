@@ -1,0 +1,291 @@
+
+body{
+  background: url(fondo.jpg) no-repeat center center fixed;
+        background-size: cover;;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.chat{
+	width: 43%;
+	height: 100%;
+
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+}
+
+.ppal{
+	display: flex;
+	justify-content: center;
+	place-content: flex-end;
+}
+
+.ppalChats{
+	font-size: 2em;
+}
+
+.buscador{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    justify-content: space-around;
+
+}
+.list-group-item{
+	box-sizing: border-box;
+	display: flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.2em;
+}
+.fa-times-circle, .fa-toggle-on{
+	font-size: 20px;
+    padding-top: 2px;
+}
+
+input.form-control.mr-sm-2 {
+    width: 33em;
+}
+
+i.fas.fa-toggle-on{
+	font-size: 1.2em;
+}
+
+i.fas.fa-times-circle{
+	padding-left: 40%;
+	font-size: 1.3em;
+}
+
+.chat{
+	border: 1px solid black;
+	height: 600px;
+    border-radius: 10px;
+}
+
+.fa-user-circle{
+	font-size: 2.5em;
+	padding-right: 15px;
+	padding-top: 5px;	
+}
+
+.sepChat{
+	justify-content: space-between;
+}
+
+.sep{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+
+
+li.list-group-item.active.sepChat.chatEsp {
+    border-bottom: 5px solid black;
+}
+.fa-arrow-circle-left, .fa-microphone, .fa-plus, .fa-plus-circle{
+	font-size: 1.7em;
+	padding-top: 15px;
+}
+.fa-chevron-circle-right{
+	font-size: 1.7em;
+}
+.fa-plus-circle{
+	padding-right: 10px;
+}
+
+.texto{
+	display: block;
+	height: 478px;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+.enviar{
+	outline:none;
+	border-color: transparent;
+}
+
+.infoChat{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: 15px;
+	width: 100px;
+}
+
+..fa-microphone{
+	padding-right: 60px;
+}
+
+.contenedor{
+	padding-top: 100px;
+}
+
+
+
+/*.mensajeTxt{
+	list-style: none;
+	background-color: lightgray;
+	height: 45px;
+	line-height: 45px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}*/
+
+.chat-bubble {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	list-style: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 2px;
+    background: #eee;
+    border-radius: 9px;
+  position: relative;
+  animation: fadeIn 1s ease-in;
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    margin-top: -10px;
+  }
+
+  &--left {
+     &:after {
+      left: 0;
+      border-right-color: #eee;
+        border-left: 0;
+      margin-left: -20px;
+    }
+  }
+
+  &--right {
+    &:after {
+      right: 0;
+      border-left-color: $blue;
+        border-right: 0;
+      margin-right: -20px;
+    }
+  }
+}
+
+.propio{
+	background-color: #9CF0AC;
+}
+.ajeno{
+	background-color: #A9A8A8;
+}
+
+.chat, .chatUl, .list-group{
+		/*background-color: white;*/
+		background: url(wsp.png);
+}
+
+.sinFondo{
+	background-color: transparent;
+}
+
+
+.toggleicono {
+    display: flex;
+}
+
+.toggle-switch{
+	padding-top: 20px;
+	padding-right: 10px;
+	display: flex;
+}
+.toggle-switch input[type=checkbox] {display:none}
+.toggle-switch label {cursor:pointer;}
+.toggle-switch label .toggle-track {
+  display:block;height:20px;width:40px;background:#eee;border-radius:20px;
+  position:relative;
+  margin-bottom:15px;border:1px solid #ccc;
+}
+
+
+.toggle-switch .toggle-track:before{
+  content:'';
+  display:inline-block;height:20px;width:20px;background:red;
+  border-radius:20px;
+  position:absolute;
+  top:0;
+  right:20;
+  transition:right .2s ease-in;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label .toggle-track:before{
+  background:green;
+  right:0px;
+}
+
+input#mensaje {
+    width: 40em;
+}
+
+
+.list-group-item.active {
+
+    background-color: #181818;
+    border-color: #181818;
+}
+
+a{
+	color: #181818;
+}
+
+.inac{
+	background-color: #c7c7c7;
+}
+
+li.list-group-item.sepChat.texto {
+    background: url(wsp.jpg);
+}
+
+li.list-group-item.sepChat.escribir {
+    background-color: #181818;
+}
+
+i.fas.fa-plus, i.fas.fa-microphone {
+    color: white;
+}
+
+input#mensaje {
+    background-color: #616161;
+    color: white;
+    border-color: #616161;
+}
+
+input#mensaje::-webkit-input-placeholder {color: #cccccc; } 
+
+button#boton {
+    border-color: #181818;
+    color: #181818;
+}
+
+button#boton:hover {
+    background-color: #f19135;
+}
+
+
+a:hover{
+    color: #f19135;
+}

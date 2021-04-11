@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Subi que te llevo!</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <a class="navbar-brand" href="#">Subite que te llevo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pedi tu auto! <span class="sr-only">(current)</span></a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tus viajes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Informacion
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Mucha info</a>
+                  <a class="dropdown-item" href="#">Mas informacion</a>
+                  <a class="dropdown-item" href="#">Un poco mas</a>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <li class="nav-item">
+              <a class="nav-link" href="#">Perfil</a>
+        </li>
+        <li class="nav-item">
+              <a id="back2" class="nav-link" href="#">Cerrar sesion</a>
+        </li>
+        </ul>
+      </div>
+  </nav>
+
+
+	<div class="contenedor">
+	<div class="chat">
+		<ul class="list-group">
+  		<li class="list-group-item active sepChat chatEsp">
+        <div class="sep">
+          <i class="fas fa-user-circle"></i>
+          <div id="nombreC"></div>
+        </div>
+      <div id="chatIcon" class="fecha"> <i id="circulito" class="fas fa-plus-circle"></i><i id="flechita" class="fas fa-arrow-circle-left"></i></div>
+      </li>
+      <li class="list-group-item sepChat texto">
+        <div id="chatUl" ></div>
+      </li>
+      <li class="list-group-item sepChat escribir">
+        <div class="sep">
+          <input id="mensaje" class="form-control mr-sm-2" type="search" placeholder="Ingresa tu texto" aria-label="texto" autocomplete="off">
+          <button id="btnEnviar" class="btn btn-outline-success my-2 my-sm-0 enviar" type="button"> <i class="fas fa-chevron-circle-right"></i> </button>
+        </div>
+      <div class="infoChat"> <i class="fas fa-microphone"></i><i class="fas fa-plus"></i></i></div>
+      </li>
+  		</ul>
+	</div>
+	</div>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+  <script type="text/javascript" src="bd2.js"></script>
+<script>
+  var back2 = document.getElementById('back2');
+  back2.addEventListener("click", function(){
+    window.location="login.html";
+  });
+</script>
+</body>
+</html>
